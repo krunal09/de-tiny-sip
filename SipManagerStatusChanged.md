@@ -1,0 +1,3 @@
+The SipManagerStatusChanged event is raised by the SipManager when a change of state occurs. Your application is required to act accordingly. This might by just displaying the current state to the user or changing the UI.
+
+Since the SipManager runs on a different thread than the UI, even the event happens on that thread. This means that all changes on the UI should be placed inside a `this.runOnUiThread(new Runnable(){}` statement. See the TinySipDemo for an example.

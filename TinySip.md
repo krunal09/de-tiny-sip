@@ -1,0 +1,1 @@
+TinySip is an easy-to-use SIP UA implementation for Android.
